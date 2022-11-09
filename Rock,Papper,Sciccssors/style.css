@@ -1,0 +1,31 @@
+body {
+    background: grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+h1 {
+    border: solid 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.game {
+    border: solid 3px;
+    font: size 1.5em;
+    padding-bottom: 5px;
+    padding: top 5px;
+}
+
+button {
+    background: lightblue;
+    font-size: 5rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

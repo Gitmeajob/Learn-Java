@@ -1,0 +1,70 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:darkgreen;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer purple;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 250px;
+}
+
+.box {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+header{
+    font-family: "Arial Narrow";
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h1 {
+    border: solid 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 3px 6px black;
+    text-decoration: underline yellow;
+}
+
+p {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    border: 3px solid white;
+    margin: 3px 40%;
+    min-width: 200px;
+    max-width: 250px;
+    
+}
+
+button {
+    padding: 5px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+}
+
+html::-webkit-scrollbar {
+    background-color: lightblue;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: yellow;
+}

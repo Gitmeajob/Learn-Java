@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Starbucks</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Starbucks</h1>
+    </header>
+    <section>
+        <div class="box">
+            <div class="coffe-drinks">
+                <p id="size-el" style="padding: 16px;">SIZE</p>
+                <p id="hot-el" style="padding: 16px;">HOT DRINK</p>
+                <p id="cold-el" style="padding: 16px;">COLD DRINK</p>
+                <p id="syrup-el" style="padding: 16px;">SYRUP</p>
+                <p id="tea-el" style="padding: 16px;">TEA</p>
+                <p id="refresher-el" style="padding: 16px;">REFRESHER</p>
+            </div>
+            <h3>Hit the button below</h3>            
+            <button id="hot" onclick="hotSelector()">HOT DRINK</button>
+            <button id="cold" onclick="coldSelector()">COLD DRINK</button>
+            <button id="tea" disabled onclick="teaSelector()">TEA</button>
+            <button id="refresher" disabled onclick="frehsSelector()">REFRESHER</button>
+            <br>
+            <br>
+            <button id="syrup" onclick="syrupSelector()">SYRUP</button>
+            <button id="size" onclick="sizeSelector()">SIZE</button>
+            <br>
+            <br>
+            <button id="resett">RESET</button>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <p>&copy; Copyright. Jonah Kroll, 2022</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
