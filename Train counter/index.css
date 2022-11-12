@@ -12,7 +12,7 @@ h1 {
     margin-top: 10px;
     margin-bottom: 10px;
     border: solid 4px;
-    background: linear-gradient(90deg, yellow 5%, black 50%, yellow 100%);
+    background: lightblue;
     color: white;
 }
 
@@ -35,15 +35,28 @@ button {
     background: green;
 }
 
+#increment-btn:hover {
+    background: rgb(9, 152, 9);
+}
+
 #save-btn {
     background: purple;
+}
+
+#save-btn:hover {
+    background: rgb(152, 5, 152);
 }
 
 #minus-btn {
     background: red;
 }
 
+#minus-btn:hover {
+    background: rgb(255, 63, 63);
+}
+
 #save-el {
     border: solid black 3px;
     background: lightblue;
 }
+

@@ -13,29 +13,60 @@
         <h1>Welcome to Starbucks</h1>
     </header>
     <section>
-        <div class="box">
-            <div class="coffe-drinks">
-                <p id="size-el" style="padding: 16px;">SIZE</p>
-                <p id="hot-el" style="padding: 16px;">HOT DRINK</p>
-                <p id="cold-el" style="padding: 16px;">COLD DRINK</p>
-                <p id="syrup-el" style="padding: 16px;">SYRUP</p>
-                <p id="tea-el" style="padding: 16px;">TEA</p>
-                <p id="refresher-el" style="padding: 16px;">REFRESHER</p>
+        <button id="starHot" onclick="myFood()">Your Food</button>
+        <button id="starCold" onclick="myDrink()">Your Drink</button>
+        <div id="drop-food">
+            <div class="container">
+                <div class="box box1">
+                    <div class="starfood">
+                        <p id="hotfood-el" style="padding: 16px;">BREAKFAST FOOD</p>
+                        <p id="bakery-el" style="padding: 16px;">BAKED GOODS</p>
+                    </div>
+                </div>
+                <div class="box box2">
+                    <div class="meal">
+                        <h3>Hit the button below</h3>
+                    <button id="hotFood" onclick="hotFoodSelector()">BREAKFAST FOOD</button>
+                    <button id="bakery" onclick="bakerySelector()">BAKERY ITEMS</button>
+                    <br>
+                    <button id="resetBtn" onclick="resetOrder()">RESET</button>
+                    <button id="post" onclick="submitOrder()">SAVE</button>
+                    </div>
+                    <h5 id="text-el"></h5>
+                </div>
             </div>
-            <h3>Hit the button below</h3>            
-            <button id="hot" onclick="hotSelector()">HOT DRINK</button>
-            <button id="cold" onclick="coldSelector()">COLD DRINK</button>
-            <button id="tea" disabled onclick="teaSelector()">TEA</button>
-            <button id="refresher" disabled onclick="frehsSelector()">REFRESHER</button>
-            <br>
-            <br>
-            <button id="syrup" onclick="syrupSelector()">SYRUP</button>
-            <button id="size" onclick="sizeSelector()">SIZE</button>
-            <br>
-            <br>
-            <button id="resett">RESET</button>
         </div>
-    </div>
+        <div id="drop-drink">
+            <div class="container">
+                <div class="box box1">
+                    <div class="coffe-drinks">
+                        <p id="size-el" style="padding: 16px;">SIZE</p>
+                        <p id="syrup-el" style="padding: 16px;">SYRUP</p>
+                        <p id="hot-el" style="padding: 16px;">HOT DRINK</p>
+                        <p id="cold-el" style="padding: 16px;">COLD DRINK</p>
+                        <p id="tea-el" style="padding: 16px;">TEA</p>
+                        <p id="refresher-el" style="padding: 16px;">REFRESHER</p>
+                        <p id="lemon-el" style="padding: 16px;">LEMONADE</p>
+                    </div>
+                </div>
+                <div class="box box2">
+                    <div class="function">
+                        <h3>Hit the button below</h3>            
+                    <button id="hot" onclick="hotSelector()">HOT DRINK</button>
+                    <button id="cold" onclick="coldSelector()">COLD DRINK</button>
+                    <button id="tea" disabled onclick="teaSelector()">TEA</button>
+                    <button id="refresher" disabled onclick="frehsSelector()">REFRESHER</button>
+                    <button id="syrup" onclick="syrupSelector()">SYRUP</button>
+                    <button id="lemon" disabled onclick="lemonType()">LEMONADE</button>
+                    <br>
+                    <br>
+                    <button id="resett">RESET</button>
+                    <button id="save" onclick="saved()">POST</button>
+                    <button id="size" onclick="sizeSelector()">SIZE</button>
+                </div>
+                <h5 id="message-el"></h5>
+            </div>
+        </div>
     </section>
     <footer>
         <p>&copy; Copyright. Jonah Kroll, 2022</p>

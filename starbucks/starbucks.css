@@ -1,16 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    justify-items: center;
+  }
 
 .intro {
     text-align: center;
     position: relative;
     background-color: red;
     color: white;
-    width: 100%;
-    padding: 35px 0px;
     font-weight: bold;
+    margin-right: 10px;
 }
 
 button {
@@ -21,9 +32,14 @@ button {
     border-radius: 5%;
 }
 
+button a {
+    text-decoration: none;
+    color: white;
+}
+
 .bkrn-img {
     background-image: url(christmas.avif);
-    height: 50%;
+    height: 95%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,4 +55,47 @@ button {
 
 .bkrn-text {
     padding: 32px 16px;
+    height: 90%;
+}
+
+.contimer {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    margin: 0px 10px 10px 0px;
+    min-height: 10vh;
+    max-height: 25vh;
+}
+
+._2x1 {
+    width: 50%;
+}
+.container {
+    display: flex;
+}
+
+.box {
+    font-size: 25px;
+    height: 100vh;
+}
+.box1 {
+    background: yellow;
+}
+.box2 {
+    background: darkblue;
+}
+.box3 {
+    background: purple;
+}
+.box4 {
+    background: green;
+}
+.box5 {
+    background: brown;
+}
+.box6 {
+    background: lightblue;
+}
+.box7 {
+    background: cyan;
 }

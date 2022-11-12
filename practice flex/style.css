@@ -1,0 +1,48 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    border: solid 4px goldenrod;
+}
+
+.box1 {
+    background: pink;
+}
+.box2 {
+    background: yellow;
+}
+.box3 {
+    background: red;
+}
+.box4 {
+    background: green;
+}
+.box5 {
+    background: purple;
+}
+.box6 {
+    background: black;
+}
+.box7 {
+    background: grey;
+}
+.box8 {
+    background: orange;
+}
+.container {
+    display: flex;
+    border: 10px darkblue;
+    min-height: 20vh;
+    max-height: 100vh;
+}
+.box {
+    display: inline;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    flex: 1;
+}

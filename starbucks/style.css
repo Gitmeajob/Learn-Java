@@ -2,39 +2,77 @@ body {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color:darkgreen;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer purple;
-}
-
-
-.container {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 250px;
-}
-
-.box {
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
 }
 
 header{
     font-family: "Arial Narrow";
     text-transform: uppercase;
     letter-spacing: 4px;
-}
-
-h1 {
-    border: solid 4px;
-    padding-top: 5px;
-    padding-bottom: 5px;
     color: white;
-    font-size: 3em;
+    text-decoration: underline;
 }
 
-h3 {
+.container {
+    display: flex;
+}
+
+.box {
+    flex: 1;
+}
+
+.box1 {
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    border: 3px solid white;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.box2 {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+button {
+    font-size: 30px;
+}
+#hot:hover:not(:disabled) {
+    background-color: red;
+    color: white;
+}
+#cold:hover:not(:disabled) {
+    background-color: cyan;
+    color: white;
+}
+#tea:hover:not(:disabled) {
+    background-color: brown;
+}
+#refresher:hover:not(:disabled) {
+    background-color: yellow;
+}
+#resett:hover:not(:disabled) {
+    background-color: steelblue;
+}
+#syrup:hover:not(:disabled) {
+    background-color: goldenrod;
+}
+#save:hover:not(:disabled) {
+    background-color: dimgray;
+}
+
+footer {
+    color: white;
+    font-size: 1.5em;
+}
+
+/* h3 {
     font-size: 1.5em;
     color: white;
     text-shadow: 3px 6px black;
@@ -49,10 +87,8 @@ p {
     font-size: 1.5em;
     color: white;
     border: 3px solid white;
-    margin: 3px 40%;
     min-width: 200px;
     max-width: 250px;
-    
 }
 
 button {
@@ -61,10 +97,9 @@ button {
     padding-bottom: 7px;
 }
 
-html::-webkit-scrollbar {
-    background-color: lightblue;
-}
-
-html::-webkit-scrollbar-thumb {
-    background-color: yellow;
-}
+h5 {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    text-transform: capitalize;
+} */
