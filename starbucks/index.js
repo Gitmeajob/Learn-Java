@@ -1,3 +1,4 @@
+// Global variables //
 let hotBtn = false;
 let coldBtn = false;
 let teaBtn = true;
@@ -10,14 +11,14 @@ let foodBtn = false;
 let drinkBtn = false;
 
 let messageEl = document.getElementById("message-el")
-
+//The random size selector//
 function sizeSelector() {
     let size = ['Tall', 'Grande', 'Venti', 'Trenta'];
     let para = document.getElementById("size-el");
     para.innerHTML = size[Math.floor(Math.random() * size.length)];
     lockedDrink.size = para.innerHTML;
 }
-
+//The random hot drink selector//
 function hotSelector() { 
     let hotDrink = ['Americano', 'Mocha', 'Cappuccino', 'Latte', 'Drip Coffee', 'Macchiato', 'Flat White', 'Tea',]
     let para = document.getElementById("hot-el");
@@ -35,7 +36,7 @@ function hotSelector() {
     lemon.setAttribute("disabled", "true");
     teaUnlock();
 }
-
+//The function that unlocks the tea drink option only after "Tea shows up in the hot list"//
 function teaUnlock() {
     let para = document.getElementById("hot-el");
     if (para.innerText == "Tea") {
@@ -43,7 +44,7 @@ function teaUnlock() {
         teaBtn = false;
     }
 }
-
+//The random cold drink selector//
 function coldSelector() {
     let coldDrink = ['Frappuccino', 'Iced Americano', 'Iced Mocha', 'Iced Macchiato', 'Iced Latte', 'Cold Brew', 'Nitro Cold Brew','Shaken Espresso', 'Iced Tea', 'Lemonade', 'Refresher']
     let para = document.getElementById("cold-el")
@@ -60,7 +61,7 @@ function coldSelector() {
     refreshUnlock();
     lemonUnlock()
 }
-
+//The random size selector//
 function refreshUnlock() {
     let para = document.getElementById("cold-el");
     let pararTwo = document.getElementById("lemon-el");
@@ -70,14 +71,14 @@ function refreshUnlock() {
         
     }
 }
-
+//The function that unlocks the refersher drink option only after "Refresher shows up in the cold list"//
 function syrupSelector() {
     let syrup = ['Simple', 'Caramel', 'Chocolate', 'Brown Sugar', 'Vanilla', 'Hazelnut', 'Mocha', 'White Mocha', 'None'];
     let para = document.getElementById("syrup-el")
     para.innerHTML = syrup[Math.floor(Math.random() * syrup.length )];
     lockedDrink.syrup = para.innerHTML;
 }
-
+//The random tea selector//
 function teaSelector() {
     let tea = ['Chai Tea', 'Earl Grey Tea', 'Royal English Breakfast Tea', 'Clouds and Mist Tea', 'Jade Cirtus Mint Tea', 'Honey Citrus Mint Tea', 'Mint Majesty Tea', 'Peach Tranquility Tea']
     let para = document.getElementById("tea-el");
@@ -94,7 +95,7 @@ function teaSelector() {
     Sugar.innerText = "SYRUP"
     lockedDrink.drink = para.innerHTML;
 }
-
+//The random refresher selector//
 function frehsSelector() {
     let fresh = ['Dragonfruit Mango', 'Strawberry Lemonade Acai', 'Paradise Drink', 'Pineapple Passionfriut', 'Pink Drink']
     let para = document.getElementById("refresher-el");
@@ -112,6 +113,7 @@ function frehsSelector() {
     lockedDrink.syrup = "";
     lockedDrink.drink = para.innerHTML;
 }
+//The function that unlocks the lemonade drink option only after "lemonade shows up in the cold list"//
 function lemonUnlock() {
     let para = document.getElementById("cold-el");
     if (para.innerText == "Lemonade") {
@@ -119,7 +121,7 @@ function lemonUnlock() {
         lemon.removeAttribute("disabled")
     }
 }
-
+//The random lemonade selector//
 function lemonType() {
     let lemon = ['Classic', 'Passion Tea', 'Mango Dragonfruit Lemonade', 'Refresher'];
     let para = document.getElementById("lemon-el");
@@ -134,7 +136,7 @@ function lemonType() {
     lockedDrink.drink = para.innerHTML;
     refreshUnlock()
 }
-
+//The random hot food selector//
 function hotFoodSelector() {
     let breakfastFood = ['Bacon and Gouda', 'Double-Smoked Bacon', 'Turkey Bacon', 'Sausage, Cheddar and Egg'];
     let para = document.getElementById("hotfood-el");
@@ -143,7 +145,7 @@ function hotFoodSelector() {
     bakery.setAttribute('disabled', 'true');
     lockedFood.breakfastFood = para.innerHTML;
 }
-
+//The random baked goods selector//
 function bakerySelector() {
     let bakedGoods = ['Croissants', 'Glazed Doughnut', 'Muffin', 'Cheese Danish'];
     let para = document.getElementById("bakery-el");
@@ -153,7 +155,7 @@ function bakerySelector() {
     let foodBtn = true;
     lockedFood.bakedGoods = para.innerHTML;
 }
-
+//The function that displays the drink randomizer upon selection//
 function myDrink() {
     let x = document.getElementById("drop-drink");
     if (x.style.display === "none") {
@@ -162,7 +164,7 @@ function myDrink() {
       x.style.display = "none";
     }
   }
-
+//The function that displays the food randomizer upon selection//
 function myFood(){
     let i = document.getElementById("drop-food");
     if (i.style.display === "none") {
@@ -171,7 +173,7 @@ function myFood(){
         i.style.display = "none"
     }
 }
-
+//The gloabl variables in the drink randomizer upon selection//
 let para = document.getElementById("cold-el");
 let paraTwo = document.getElementById("hot-el");
 let paraThree = document.getElementById("size-el");
@@ -201,8 +203,11 @@ function reset() {
         otherbutton[i].setAttribute('disabled', 'true');
     }
 }
+
+//The gloabl variables in the food randomizer upon selection//
 let paraEight = document.getElementById("bakery-el");
 let paraNine = document.getElementById("hotfood-el")
+//food reset button//
 function resetOrder() {
     lockedDrink.bakedGoods = "";
     lockedDrink.breakfastFood = "";
@@ -215,16 +220,20 @@ function resetOrder() {
         button[j].removeAttribute("disabled");
     }
 }
+
+// funtion that stores the random data//
 let lockedDrink = {
     size: "",
     syrup: "", 
     drink: "",
 }
+
 let lockedFood = {
     breakfastFood: "",
     bakedGoods: ""
 }
 
+//funtion that submits the saved data to the html//
 function saved() {
     let yourDrink = document.getElementById("message-el");
     console.log(lockedDrink);
